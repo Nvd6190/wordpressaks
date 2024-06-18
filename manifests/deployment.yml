@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: nvdwordpressaks 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nvdwordpressaks
+  template:
+    metadata:
+      labels:
+        app: nvdwordpressaks 
+    spec:
+      containers:
+        - name: nvdwordpressaks 
+          image: wordpressacrnd.azurecr.io/nvdwordpressaks
+          ports:
+          - containerPort: 80
