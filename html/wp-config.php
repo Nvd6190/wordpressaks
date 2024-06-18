@@ -22,22 +22,22 @@
 /** The name of the database for WordPress dsadas*/
 $dbname = getenv('DB_ENV_NAME');
 if (empty($dbname)){
-	$dbname = wordpress5000;
+	$dbname = wordpressdb;
 }
 
 $dbuser = getenv('DB_ENV_USER');
 if (empty($dbuser)){
-	$dbuser = 'yaprigal@yaprigalmysql';
+	$dbuser = 'useradmin';
 }
 
 $dbpassword = getenv('DB_ENV_PASSWORD');
 if (empty($dbpassword)){
-	$dbpassword = 'Microsoft0512$';
+	$dbpassword = 'Password@2020';
 }
 
 $dbhost = getenv('DB_ENV_HOST');
 if (empty($dbhost)){
-	$dbhost = 'yaprigalmysql.mysql.database.azure.com:3306';
+	$dbhost = 'wordpressdb123.database.windows.net:3306';
 }
 
 
